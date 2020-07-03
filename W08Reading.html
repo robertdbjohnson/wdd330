@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W08Reading</title>
+</head>
+<body>
+    <pre>
+        I watched these videos on transitions and I thought they where really great videos to help me see the potential of transitions
+        and it helped me better understand their properties.
+            <a href="https://www.youtube.com/watch?v=Nloq6uzF8RQ">Transitions Video #1</a>
+            <a href="https://www.youtube.com/watch?v=YYlFFMc0RAg">Transitions Video #2</a>
+
+            transition-property: transform, color; 
+            transition-duration: 0.2s;  
+            transition-timing-function: ease-out;
+            transition-delay: 50ms;
+
+
+        Here are a few basic animations that might be helpful to reference:
+
+        @keyframes moveRight { 
+            from {
+            transform: translateX(-50%);
+            }
+            to {
+            transform: translateX(50%);
+            }
+        }
+
+        @keyframes appearDisappear { 
+            0%, 100% {
+            opacity: 0;
+            }
+            20%, 80% {
+            opacity: 1;
+            }
+        }
+
+        @keyframes bgMove {
+            100% {
+            background-position: 120% 0;
+            }
+        }
+
+        Here is some shorthand animation properties:
+        .verbose {
+            animation-name: appearDisappear; 
+            animation-duration: 300ms; 
+            animation-timing-function: ease-in;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 5s;
+            animation-fill-mode: backwards;
+            animation-play-state: running;
+        }
+        /* shorthand */
+        .concise {
+            animation: 300ms ease-in alternate 5s backwards appearDisappear;
+        }
+
+        I watched this video on youtube teaching about canvas and it helped teach me about the capabilities of canvas
+        <a href="https://www.youtube.com/watch?v=gm1QtePAYTM">Canvas Video</a>
+
+        For a very basic look at SVGs I watched this video
+        <a href="https://www.youtube.com/watch?v=ZJSCl6XEdP8">SVG Video</a>
+
+    </pre>
+</body>
+</html>
